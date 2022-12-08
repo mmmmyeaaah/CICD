@@ -22,6 +22,7 @@ class StockViewSet(ModelViewSet):
     filterset_fields = ['products']
     search_fields = ['positions__product__title']
 
+
 @api_view(['GET'])
 def sample_view(request):
-    return  Response('Hello!!')
+    return Response('Hello!!')
